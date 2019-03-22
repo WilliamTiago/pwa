@@ -1,0 +1,23 @@
+CACHE MANIFEST
+js/jquery-3.2.1.min.js
+js/bootstrap.min.js
+js/home.js
+js/functions.js
+js/home.js
+js/carrinho.js
+js/produto.js
+js/buscar.js
+js/categoria.js
+css/bootstrap.min.css
+css/style.css
+imgs/icon-256.png
+imgs/icon-196.png
+imgs/icon-144.png
+imgs/logo.png
+imgs/load.gif
+index.html
+carrinho.html
+produto.html
+categoria.html
+manifest.json
+sw.js

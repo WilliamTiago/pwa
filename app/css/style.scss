@@ -1,0 +1,87 @@
+$cor1 : #F00;
+$cor2 : #333;
+
+$tam1 : 2em;
+$tam2 : 1.2em;
+
+body {
+	margin-top: 50px;
+}
+
+.mascara {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	z-index: 10000;
+	padding: 100px 30px;
+	box-sizing: border-box;
+	top: 0;
+	display: none;
+}
+
+.foto img {
+	width: 90%;
+	margin: auto;
+}
+
+.control-label {
+	font-size: $tam2;
+	text-align: left !important;
+}
+
+h3 {
+	font-size: $tam1;
+	color: $cor1;
+	font-weight: bold;
+}
+
+.navbar-brand {
+	padding: 5px 0px;
+	img {
+		width: 200px;
+	}
+}
+
+.navbar-header {
+	div {
+		float: right;
+		margin-top: 8px;
+		margin-right: 5px;
+	}
+}
+
+footer {
+	background: $cor2;
+	padding: 10px 0px;
+	text-align: center;
+	color: $cor1;
+	margin-top: 10px;
+}
+
+.row .thumbnail {
+	img {
+		height: 300px;
+	}
+	p {
+		height: 60px;
+		font-size: $tam2;
+		font-weight: bold;
+	}
+	.valor {
+		color: $cor1;
+		font-size: $tam2;
+		height: 30px;
+	}
+}
+
+@media (max-width: 375px) {
+	.navbar-brand img {
+		width: 150px;
+	}
+
+	.btn-lg {
+		width: 100%;
+		margin-top: 5px;
+	}
+}

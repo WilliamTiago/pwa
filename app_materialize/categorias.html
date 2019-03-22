@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AkiExpress</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="manifest" href="manifest.json">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/funcoes.js" async></script>
+	<script type="text/javascript"
+	src="js/categoria.js" async></script>
+
+	<link rel="shortcut icon" href="imgs/icon-48.png">
+</head>
+<body>
+<nav>
+	<div class="nav-wrapper red darken-4">
+		<a href="index.html" class="brand-logo">
+			<img src="imgs/logo.png"
+			alt="Akiexpress" title="Akiexpress">
+		</a>
+		<a href="#" data-activates="mobile-demo" class="button-collapse">
+			<i class="material-icons">menu</i>
+		</a>
+
+		<ul class="right hide-on-med-and-down">
+			<li>
+				<a href="carrinho.html">
+				<i class="material-icons">shopping_cart</i></a>
+			</li>
+			<li>
+				<a href="#" class="logar">
+				<i class="material-icons">supervisor_account</i></a>
+			</li>
+			<li>
+				<a href="#" class="buscar">
+				<i class="material-icons">search</i></a>
+			</li>
+		</ul>
+		<ul class="side-nav" id="mobile-demo">
+			<li>
+				<a href="carrinho.html">
+				<i class="material-icons">shopping_cart</i></a>
+			</li>
+			<li>
+				<a href="#" class="logar">
+				<i class="material-icons">supervisor_account</i></a>
+			</li>
+			<li>
+				<a href="#" class="buscar">
+				<i class="material-icons">search</i></a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+<main class="container">
+	<h1>Produtos em Destaque</h1>
+	<div id="msg"></div>
+
+	<div class="row">
+	</div>
+</main>
+
+<footer class="page-footer red darken-3">
+	<div class="container center-align">
+		<img src="imgs/logo.png" alt="AkiExpress" title="AkiExpress">
+	</div>
+	<div class="footer-copyright red darken-4">
+		<p>AkiExpress - 2017 - Desenvolvido por Romário de Lontras</p>
+	</div>
+</footer>
+
+
+<div class="mascara" id="login">
+	<div class="card center-align">
+		<h3>Efetuar Login</h3>
+		<form name="form" class="form text-left">
+
+			<label for="email" class="control-label">E-mail:</label>
+			<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Por favor, digite seu e-mail" autofocus>
+
+			<label for="senha" class="control-label">Senha:</label>
+			<input type="password" name="senha" id="senha" class="form-control input-lg" placeholder="Por favor, digite a sua senha">
+
+			<button type="button" class="btn btn-danger btn-cancelar btn-lg">Cancelar</button>
+			<button type="button" class="btn btn-success btn-logar btn-lg">Login</button>
+		</form>
+	</div>
+</div>
+
+
+<div class="mascara" id="busca">
+	<div class="card">
+	<form name="formBusca" method="get" action="buscar.html">
+		
+		<input type="text" class="form-control"
+		placeholder="Digite uma palavra..."
+		name="palavra">
+		
+		<button type="submit" class="btn btn-success">
+			<i class="material-icons">search</i>
+		</button>
+			
+	</form>
+	<br>
+	<p class="text-center">
+		<button type="button" class="btn btn-danger btn-cancelar btn-lg">Cancelar</button>
+	</p>
+	</div>
+</div>
+
+</body>
+</html>

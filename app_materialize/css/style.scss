@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$font: Raleway, Tahoma, Verdana;
+$tam1 : 2em;
+$tam2 : 1.5em;
+$tam3 : 1.2em;
+$cor1: #333;
+$cor2: #F00;
+
+.brand-logo {
+	img {
+		width: 200px;
+		margin: 10px;
+	}
+}
+
+.row {
+	img {
+		width: 100%;
+	}
+}
+
+.card {
+	padding: 10px;
+	p {
+		font-size: $tam2;
+	}
+	.valor {
+		font-size: $tam2;
+		color: $cor2;
+	}
+}
+
+.mascara {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	z-index: 10000;
+	padding: 100px 30px;
+	box-sizing: border-box;
+	top: 0;
+	display: none;
+}
+
+.btn-danger {
+	background: #b71c1c !important;
+}
+.btn-success {
+	background: #80cbc4 !important;
+}
+
+footer {
+	margin-top: 10px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AkiExpress</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" async></script>
+	<script type="text/javascript" src="js/funcoes.js"></script>
+	<script type="text/javascript"	src="js/buscar.js"></script>
+
+	<link rel="shortcut icon" href="imgs/icon-48.png">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="pull-right visible-xs">
+        <a href="javascript:;" class="btn btn-default buscar"><i class="glyphicon glyphicon-search"></i></a>
+        <a href="javascript:;" class="btn btn-default logar"><i class="glyphicon glyphicon-user"></i></a>
+        <a href="carrinho.html" class="btn btn-default"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+      </div>
+
+
+      <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt="AkiExpress" title="AkiPexpress"></a>
+      
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="hidden-xs"><a href="javascript:;" class="buscar"><i class="glyphicon glyphicon-search"></i></a></li>
+        <li class="hidden-xs"><a href="javascript:;" class="logar"><i class="glyphicon glyphicon-user"></i></a></li>
+        <li class="hidden-xs"><a href="carrinho.html"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="carousel slide" data-ride="carousel"
+id="banner">
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="imgs/banner1.jpg">
+		</div>
+		<div class="item">
+			<img src="imgs/banner2.jpg">
+		</div>
+		<div class="item">
+			<img src="imgs/banner3.jpg">
+		</div>
+	</div> <!-- carousel inner -->
+
+	<a class="left carousel-control" href="#banner" data-slide="prev">
+		<i class="glyphicon glyphicon-chevron-left"></i>
+	</a>
+	<a class="right carousel-control" href="#banner" data-slide="next">
+		<i class="glyphicon glyphicon-chevron-right"></i>
+	</a>
+</div>
+
+<main class="container">
+	<h1>Resultado da Busca</h1>
+	<div id="msg"></div>
+
+	<div class="row">
+
+	</div>
+</main>
+
+<footer>
+	<img src="imgs/logo.png" alt="AkiExpress"
+	title="AkiExpress">
+	<p>AkiExpress - 2017 - Desenvolvido por Romário de Lontras</p>
+</footer>
+
+
+<div class="mascara" id="login">
+	<div class="well text-center">
+		<h3>Efetuar Login</h3>
+		<form name="form" class="form text-left">
+
+			<label for="email" class="control-label">E-mail:</label>
+			<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Por favor, digite seu e-mail" autofocus>
+
+			<label for="senha" class="control-label">Senha:</label>
+			<input type="password" name="senha" id="senha" class="form-control input-lg" placeholder="Por favor, digite a sua senha">
+
+			<button type="button" class="btn btn-danger btn-cancelar btn-lg">Cancelar</button>
+			<button type="button" class="btn btn-success btn-logar btn-lg">Login</button>
+		</form>
+	</div>
+</div>
+
+
+<div class="mascara" id="busca">
+	<form name="formBusca" method="get" action="buscar.html">
+		<div class="input-group input-group-lg">
+			<input type="text" class="form-control"
+			placeholder="Digite uma palavra..."
+			name="palavra">
+			<span class="input-group-btn">	
+				<button type="submit" class="btn btn-success">
+					<i class="glyphicon glyphicon-search"></i>
+				</button>
+			</span>
+		</div>
+	</form>
+	<br>
+	<p class="text-center">
+		<button type="button" class="btn btn-danger btn-cancelar btn-lg">Cancelar</button>
+	</p>
+</div>
+
+</body>
+</html>
